@@ -73,7 +73,7 @@ def get_prediction(image_bytes):
 
 
 
-def classify_image(event):
+def handler(event, context=None):
     try:
         print(event)
         print(event.files.to_dict())
